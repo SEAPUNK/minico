@@ -8,9 +8,9 @@ minico
 [![david dependencies](https://david-dm.org/SEAPUNK/minico.svg?style=flat-square)](https://david-dm.org/SEAPUNK/minico)
 [![david dev dependencies](https://david-dm.org/SEAPUNK/minico/dev-status.svg?style=flat-square)](https://david-dm.org/SEAPUNK/minico)
 
-It's like `co`, but tiny: Minimal Promise-based coroutines. Performant, with no fluff.
+It's like [`co`](https://github.com/tj/co), but tiny: Minimal Promise-based coroutines. Performant, with no fluff.
 
-Based off of [`copromise`](https://github.com/deanlandolt/copromise)
+Based off of [`copromise`](https://github.com/deanlandolt/copromise).
 
 `npm install minico`
 
@@ -34,7 +34,7 @@ const doThings = minico(function * doThings (input) {
 })
 
 doThings(2).then((value) => {
-  console.log('Copromise success:', value) // Copromise success: nice2
+  console.log('Coroutune success:', value) // Coroutune success: nice2
 }).catch((err) => {
   console.log('An error occured', err)
 })
