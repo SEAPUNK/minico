@@ -18,8 +18,6 @@ Relies on Promise being global.
 * 453 bytes minified with uglify-js 2.6.2
 * 257 bytes minified with uglify-js 2.6.2, and compressed with gzip 1.8
 
-`npm install minico`
-
 ```js
 import minico from 'minico'
 
