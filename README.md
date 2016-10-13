@@ -8,7 +8,9 @@
 [![david dependencies](https://david-dm.org/SEAPUNK/minico.svg?style=flat-square)](https://david-dm.org/SEAPUNK/minico)
 [![david dev dependencies](https://david-dm.org/SEAPUNK/minico/dev-status.svg?style=flat-square)](https://david-dm.org/SEAPUNK/minico)
 
-It's like `co`, but tiny. Based off of [`copromise`](https://github.com/deanlandolt/copromise)
+It's like `co`, but tiny: Minimal Promise-based coroutines. Performant, with no fluff.
+
+Based off of [`copromise`](https://github.com/deanlandolt/copromise)
 
 `npm install minico`
 

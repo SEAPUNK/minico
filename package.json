@@ -1,7 +1,7 @@
 {
   "name": "minico",
   "version": "0.0.0",
-  "description": "It's like co, but tiny. -- Minimal Promise-based coroutines. Performant, with minimal fluff.",
+  "description": "It's like co, but tiny: Minimal Promise-based coroutines. Performant, with no fluff.",
   "main": "lib/index.js",
   "scripts": {
     "test": "standard && nyc ava"
