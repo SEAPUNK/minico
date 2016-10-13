@@ -1,4 +1,4 @@
-`minico`
+minico
 ---
 
 [![npm version](https://img.shields.io/npm/v/minico.svg?style=flat-square)](https://npmjs.com/package/minico)
