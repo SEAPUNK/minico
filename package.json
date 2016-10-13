@@ -1,0 +1,34 @@
+{
+  "name": "minico",
+  "version": "0.0.0",
+  "description": "It's like co, but tiny. -- Minimal Promise-based coroutines. Performant, with minimal fluff.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "standard && nyc ava"
+  },
+  "author": "Ivan K <ivan@sq10.net>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SEAPUNK/minico"
+  },
+  "keywords": [
+    "async",
+    "flow",
+    "coroutine",
+    "generator",
+    "promise",
+    "performance",
+    "co"
+  ],
+  "bugs": {
+    "url": "https://github.com/SEAPUNK/minico/issues"
+  },
+  "homepage": "https://github.com/SEAPUNK/minico#readme",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "delay": "^1.3.1",
+    "nyc": "^8.3.1",
+    "standard": "^8.4.0"
+  }
+}
