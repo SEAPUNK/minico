@@ -34,7 +34,7 @@ const doThings = minico(function * doThings (input) {
 })
 
 doThings(2).then((value) => {
-  console.log('Coroutune success:', value) // Coroutune success: nice2
+  console.log('Coroutine success:', value) // Coroutine success: nice2
 }).catch((err) => {
   console.log('An error occured', err)
 })
