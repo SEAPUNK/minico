@@ -118,3 +118,12 @@ test('rejection - throw error', async (t) => {
   throw new Error('coroutine did not throw')
 })
 
+test('minico.run helper', async (t) => {
+  t.plan(1)
+  const { run } = minico
+  const retval = await run(function * () {
+    return yield Promise.resolve('ok')
+  })
+  t.is(retval, 'ok')
+})
+

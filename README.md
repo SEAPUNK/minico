@@ -20,6 +20,8 @@ Relies on Promise being global.
 * 453 bytes minified with uglify-js 2.6.2
 * 257 bytes minified with uglify-js 2.6.2, and compressed with gzip 1.8
 
+Use `minico` like [`co.wrap()`](https://github.com/tj/co#var-fn--cowrapfn)
+
 ```js
 import minico from 'minico'
 
@@ -39,4 +41,24 @@ doThings(2).then((value) => {
   console.log('An error occured', err)
 })
 
+```
+
+or like [`co()`](https://github.com/tj/co#cofnthen-val--)
+
+```js
+import minico from 'minico'
+
+minico.run(function * doThings () {
+  yield washDishes()
+  try {
+      yield makePopcorn()
+  } catch (err) {
+      yield someFailureHandler(err)
+  }
+  return 'nice'
+}).then((value) => {
+  console.log('Coroutine success:', value) // Coroutine success: nice
+}).catch((err) => {
+  console.log('An error occured', err)
+})
 ```
