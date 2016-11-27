@@ -2,7 +2,7 @@ import test from 'ava'
 
 import delay from 'delay'
 
-import minico from './'
+import minico, { run } from './'
 
 const genfn = function * (a, b) {
   let isCaught = false
@@ -120,7 +120,6 @@ test('rejection - throw error', async (t) => {
 
 test('minico.run helper', async (t) => {
   t.plan(1)
-  const { run } = minico
   const retval = await run(function * () {
     return yield Promise.resolve('ok')
   })
